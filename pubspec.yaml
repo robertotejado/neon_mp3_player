@@ -1,0 +1,52 @@
+# ==========================================
+# PUBSPEC.YAML (La lista de la compra y configuración del motor)
+# ==========================================
+name: neon_drive_player # El nombre en código interno de tu proyecto (sin espacios)
+description: "neon_drive_player.  un reproductor de mp3 para coche con estilo new retrowave"
+
+# Evita que subas tu código por error a los servidores públicos de programadores
+publish_to: 'none'
+
+# La versión de tu app. Si en 2027 haces una gran actualización, la cambiarías a 2.0.0
+version: 1.0.0+1
+
+# La versión mínima del lenguaje Dart que exige este proyecto para funcionar
+environment:
+  sdk: ^3.11.1
+
+# ==========================================
+# DEPENDENCIES (Las piezas del motor que metemos dentro del coche)
+# ==========================================
+dependencies:
+  flutter:
+    sdk: flutter
+
+  file_picker: ^8.0.0       # El explorador de Windows/Android para buscar la carpeta de tus 80s
+  just_audio: ^0.9.39       # El motor de audio profesional V8 con acceso al hardware de sonido
+  permission_handler: ^11.3.0 # El conserje: se encarga de pedirle permiso a Android para leer tu SD
+  wakelock_plus: ^1.2.8     # El "café virtual" que mantiene la pantalla del móvil siempre encendida
+  cupertino_icons: ^1.0.8   # Pack de iconos de sistema (play, pause, etc.)
+  marquee: ^2.2.3           # El panel digital para que el título de la canción se deslice
+
+# ==========================================
+# DEV_DEPENDENCIES (Las herramientas de tu taller. No van dentro de la app final)
+# ==========================================
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1  # El robot automático que nos recortó el Lamborghini en 20 tamaños distintos
+  flutter_lints: ^6.0.0            # Un "chivato" de Android Studio que te avisa si escribes código desordenado
+
+# ==========================================
+# CONFIGURACIÓN ESPECÍFICA DE FLUTTER
+# ==========================================
+flutter:
+  uses-material-design: true # Le dice a la app que puede usar las sombras y botones estándar de Google
+
+# ==========================================
+# CONFIGURACIÓN DEL GENERADOR DE ICONOS
+# ==========================================
+flutter_launcher_icons:
+  android: true # Queremos que cree iconos para tu Xiaomi (Android)
+  ios: false    # No queremos iconos para iPhone (ahorramos tiempo y evitamos archivos inútiles)
+  image_path: "assets/icon.png" # La ruta exacta donde le dejamos la imagen cuadrada para que hiciera su magia

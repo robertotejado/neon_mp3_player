@@ -1,2 +1,17 @@
-# neon_mp3_player
-No es solo un reproductor de música. Es una declaración de intenciones. Es lo que escuchas mientras las luces de neón se reflejan en tu parabrisas y el motor de tu coche suena como un sintetizador de John Carpenter.
+# neon_drive_player
+
+neon_drive_player.  un reproductor de mp3 para coche con estilo new retrowave
+
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
+- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
