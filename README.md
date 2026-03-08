@@ -1,4 +1,4 @@
-# 🕹️ Neon Drive Player: El Salpicadero Digital del 1984 🕹️
+# 🕹️ Neon MP3 Player: El Salpicadero Digital del 1984 🕹️
 
 ![License](https://img.shields.io/badge/License-MIT-f106ff?style=for-the-badge&labelColor=000000)
 ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
@@ -69,3 +69,4 @@ Este proyecto está bajo la licencia **MIT**. Eres libre de usarlo, copiarlo y m
 ¿Has encontrado un bug? ¿La rejilla no es lo suficientemente rosa? Abre un *Pull Request*. Si tu código tiene el flow de un solo de teclado de los 80, será aceptado de inmediato.
 
 *Hecho con ❤️, ☕ y mucha estética Outrun.*
+
