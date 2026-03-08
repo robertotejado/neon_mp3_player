@@ -8,6 +8,11 @@
 
 **Neon MP3 Player** no es un reproductor de música. Es una máquina del tiempo programada en **Flutter** para aquellos que conducen a través de una red de neón infinito. Si tu música no suena mientras una cuadrícula fucsia converge en el horizonte de tu pantalla, ¿realmente estás escuchando música?
 
+<p align="center">
+  <img src="com.neon.drive.player.neon_drive_player1.jpg" width="80%" alt="Neon Mp3 Player Visualizer">
+  <br>
+  <i>"I Drive. My Music Drives. We all Drive."</i>
+</p>
 ---
 
 ## 🔥 Características del Motor (Specs)
@@ -71,3 +76,8 @@ Este proyecto está bajo la licencia **MIT**. Eres libre de usarlo, copiarlo y m
 *Hecho con ❤️, ☕ y mucha estética Outrun.*
 
 
+<p align="center">
+  <img src="com.neon.drive.player.neon_drive_player2.jpg" width="80%" alt="Neon Mp3 Player Visualizer">
+  <br>
+  <i>"I Drive. My Music Drives. We all Drive."</i>
+</p>
