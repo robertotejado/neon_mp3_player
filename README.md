@@ -6,7 +6,7 @@
 
 > "Hay cien mil calles en esta ciudad. No necesitas saber el camino. Solo necesitas el tracklist adecuado." — *Un desarrollador anónimo con una chaqueta de escorpión.*
 
-**Neon Drive Player** no es un reproductor de música. Es una máquina del tiempo programada en **Flutter** para aquellos que conducen a través de una red de neón infinito. Si tu música no suena mientras una cuadrícula fucsia converge en el horizonte de tu pantalla, ¿realmente estás escuchando música?
+**Neon MP3 Player** no es un reproductor de música. Es una máquina del tiempo programada en **Flutter** para aquellos que conducen a través de una red de neón infinito. Si tu música no suena mientras una cuadrícula fucsia converge en el horizonte de tu pantalla, ¿realmente estás escuchando música?
 
 ---
 
@@ -69,4 +69,5 @@ Este proyecto está bajo la licencia **MIT**. Eres libre de usarlo, copiarlo y m
 ¿Has encontrado un bug? ¿La rejilla no es lo suficientemente rosa? Abre un *Pull Request*. Si tu código tiene el flow de un solo de teclado de los 80, será aceptado de inmediato.
 
 *Hecho con ❤️, ☕ y mucha estética Outrun.*
+
 
