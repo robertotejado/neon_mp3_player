@@ -80,6 +80,16 @@ class _NeonPlayerScreenState extends State<NeonPlayerScreen> with SingleTickerPr
     )..repeat(reverse: true);
 
     // 2. Conectamos los efectos (EQ y Volumen) a la "tubería" del motor de audio
+    //_audioPlayer = AudioPlayer(
+    //  audioPipeline: AudioPipeline(androidAudioEffects: [
+    //    _equalizer,
+    //    _loudnessEnhancer
+    //  ]),
+    //);
+    //_equalizer.setEnabled(true);
+    //_loudnessEnhancer.setEnabled(true);
+
+    // Conectamos los efectos (EQ y Volumen) a la "tubería" del motor de audio
     _audioPlayer = AudioPlayer(
       audioPipeline: AudioPipeline(androidAudioEffects: [
         _equalizer,
@@ -87,7 +97,7 @@ class _NeonPlayerScreenState extends State<NeonPlayerScreen> with SingleTickerPr
       ]),
     );
     _equalizer.setEnabled(true);
-    _loudnessEnhancer.setEnabled(true);
+    _loudnessEnhancer.setEnabled(false); // <--- APAGADO POR DEFECTO para que no haga "pumping"
 
     // 3. OYENTES (Listeners): Están siempre atentos a lo que hace el motor de audio
     _audioPlayer.playerStateStream.listen((state) {
@@ -222,7 +232,7 @@ class _NeonPlayerScreenState extends State<NeonPlayerScreen> with SingleTickerPr
   }
 
   // Aplica los cambios en la tarjeta de sonido del móvil
-  Future<void> _applyEqualizerSettings(List<double> newBands, String newStyle) async {
+ /*Future<void> _applyEqualizerSettings(List<double> newBands, String newStyle) async {
     setState(() {
       masterBands = newBands;
       currentEqStyle = newStyle;
@@ -239,6 +249,29 @@ class _NeonPlayerScreenState extends State<NeonPlayerScreen> with SingleTickerPr
       await _loudnessEnhancer.setTargetGain(0.2);
     } else {
       await _loudnessEnhancer.setTargetGain(0.0);
+    }
+  } */
+
+// Aplica los cambios en la tarjeta de sonido del móvil (¡Solución del volumen loco!)
+  Future<void> _applyEqualizerSettings(List<double> newBands, String newStyle) async {
+    setState(() {
+      masterBands = newBands;
+      currentEqStyle = newStyle;
+    });
+
+    // Inyecta las frecuencias de los sliders al motor
+    final parameters = await _equalizer.parameters;
+    for (int i = 0; i < 5 && i < parameters.bands.length; i++) {
+      parameters.bands[i].setGain(newBands[i]);
+    }
+
+    // El Nitro solo entra si pones ROCK o POP. Si no, lo apagamos para que no distorsione.
+    if (newStyle == "ROCK" || newStyle == "POP") {
+      await _loudnessEnhancer.setEnabled(true);
+      await _loudnessEnhancer.setTargetGain(0.2); // Ganancia extra
+    } else {
+      await _loudnessEnhancer.setTargetGain(0.0);
+      await _loudnessEnhancer.setEnabled(false); // Lo dormimos para estabilizar el volumen general
     }
   }
 
