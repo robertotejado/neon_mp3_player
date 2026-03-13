@@ -29,7 +29,8 @@
 
 1.  **Clona este sueño húmedo de laca y sintetizadores:**
     ```bash
-    git clone [https://github.com/robertotejado/neon_drive_player.git](https://github.com/robertotejado/neon_drive_player.git)
+    git clone https://github.com/robertotejado/neon_drive_player.git
+    (https://github.com/robertotejado/neon_drive_player.git)
     ```
 2.  **Entra en el garaje:**
     ```bash
@@ -81,3 +82,4 @@ Este proyecto está bajo la licencia **MIT**. Eres libre de usarlo, copiarlo y m
   <br>
   <i>"I Drive. My Music Drives. We all Drive."</i>
 </p>
+
