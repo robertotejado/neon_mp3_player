@@ -8,7 +8,7 @@ description: "neon_drive_player.  un reproductor de mp3 para coche con estilo ne
 publish_to: 'none'
 
 # La versión de tu app. Si en 2027 haces una gran actualización, la cambiarías a 2.0.0
-version: 1.0.0+1
+version: 2.0.0+2
 
 # La versión mínima del lenguaje Dart que exige este proyecto para funcionar
 environment:
